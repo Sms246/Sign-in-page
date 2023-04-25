@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/925032a7d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="" name="myform" onsubmit="return validateform()" method="post">
+            <h1><b>Sign in</b></h1>
+            <center> <hr class="line"> </center>
+            <div id="name">
+                <i class="fa-sharp fa-solid fa-user icon"></i>
+                <input name="iname" type="text" placeholder="User name"><br>
+                <span class="ferror"></span>
+            </div>
+            <div id="email">
+                <i class="fa-sharp fa-solid fa-envelope icon"></i>
+                <input name="iemail" type="email" placeholder="email id"><br>
+                <span class="ferror"></span>
+            </div>
+            <div id="phone">
+                <i class="fa-sharp fa-solid fa-phone icon"></i>
+                <input name="iphone" type="text" placeholder="Phone number"><br>
+                <span class="ferror"></span>
+            </div> 
+            <div id="password">
+                <i class="fa-sharp fa-solid fa-lock icon"></i>
+                <input name="ipass" type="password" placeholder="Password"><br>
+                <span class="ferror"></span>
+            </div>
+            <div id="confirm">
+                <i class="fa-solid fa-key icon"></i>
+                <input name="iconf" type="password" placeholder="Confirm password"><br>
+                <span class="ferror"></span>
+            </div>
+            <input class="btn btn-lg button" type="submit">
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
